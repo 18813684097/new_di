@@ -9,7 +9,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 
-from Common.readdata import ReadData as R
+
+
+# from common.readdata import *
 
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
@@ -28,8 +30,8 @@ class WebTools(object):
         if isinstance(time_wait, int):
             time.sleep(time_wait)
 
-    def Getwebpage(self, page):
-        return R.ReadXmlData("%s.xml" % page, "page", 0, "url")
+    # def Getwebpage(self, page):
+    #     return readdate.ReadXmlData("%s.xml" % page, "page", 0, "url")
 
     # 浏览器前进操作
     def forward(self):
